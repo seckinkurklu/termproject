@@ -44,7 +44,7 @@ async function loadCampaignDetails(campaignId) {
         }
         
         // Update page title
-        document.title = `${currentCampaign.title} - PetitionPower`;
+        document.title = `${currentCampaign.title} - Petition Center`;
         
         // Calculate progress percentage
         const progressPercentage = Math.min(
