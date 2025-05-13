@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petition Campaign - PetitionPower</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/campaign.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetitionPower</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create Campaign</a></li>
+                <li><a href="active.html">Active Campaigns</a></li>
+                <li><a href="past.html">Past Campaigns</a></li>
+                <li><a href="help.html">Help/FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="campaign-detail">
+            <div class="container">
+                <div id="campaignContent" class="loading">
+                    Loading petition details...
+                </div>
+            </div>
+        </section>
+        
+        <section class="campaign-signatures">
+            <div class="container">
+                <h2>Recent Signatures</h2>
+                <div id="signaturesContainer" class="signatures-container">
+                    <div class="loading">Loading signatures...</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="related-campaigns">
+            <div class="container">
+                <h2>More Petitions You May Like</h2>
+                <div id="relatedCampaigns" class="campaigns-container">
+                    <div class="loading">Loading related petitions...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PetitionPower</h3>
+                <p>Make your voice heard and create change.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Create Campaign</a></li>
+                    <li><a href="active.html">Active Campaigns</a></li>
+                    <li><a href="past.html">Past Campaigns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="help.html">Help/FAQ</a></li>
+                    <li><a href="help.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PetitionPower. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/campaign.js"></script>
+</body>
+</html> 

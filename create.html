@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Petition - PetitionPower</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/create.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetitionPower</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html" class="active">Create Campaign</a></li>
+                <li><a href="active.html">Active Campaigns</a></li>
+                <li><a href="past.html">Past Campaigns</a></li>
+                <li><a href="help.html">Help/FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="create-campaign">
+            <div class="container">
+                <h1>Create a Petition Campaign</h1>
+                <p class="section-description">Start a petition about something you'd like to change. Set a goal for the number of signatures and share it with your community.</p>
+                
+                <form id="createCampaignForm" class="campaign-form">
+                    <div class="form-group">
+                        <label for="campaignTitle">Title *</label>
+                        <input type="text" id="campaignTitle" class="form-control" placeholder="Give your petition a clear, attention-grabbing title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="campaignDescription">Description *</label>
+                        <textarea id="campaignDescription" class="form-control" rows="6" placeholder="Describe the issue and what change you're seeking" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="targetSignatures">Target Signatures *</label>
+                        <input type="number" id="targetSignatures" class="form-control" min="10" value="100" required>
+                        <small>A reasonable target increases your chance of success</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="campaignImage">Image (Optional)</label>
+                        <input type="file" id="campaignImage" accept="image/*">
+                        <small>Add an image that represents your petition (max 2MB)</small>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Create Petition</button>
+                        <button type="button" class="btn secondary" onclick="window.location.href='index.html'">Cancel</button>
+                    </div>
+                </form>
+                
+                <div id="formStatus" class="form-status"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PetitionPower</h3>
+                <p>Make your voice heard and create change.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Create Campaign</a></li>
+                    <li><a href="active.html">Active Campaigns</a></li>
+                    <li><a href="past.html">Past Campaigns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="help.html">Help/FAQ</a></li>
+                    <li><a href="help.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PetitionPower. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/create.js"></script>
+</body>
+</html> 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetitionPower - Make Your Voice Heard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetitionPower</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="create.html">Create Campaign</a></li>
+                <li><a href="active.html">Active Campaigns</a></li>
+                <li><a href="past.html">Past Campaigns</a></li>
+                <li><a href="help.html">Help/FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Make Your Voice Heard</h1>
+                <p>Create, sign, and share petitions that matter to you and your community.</p>
+                <div class="cta-buttons">
+                    <a href="create.html" class="btn primary">Start a Petition</a>
+                    <a href="active.html" class="btn secondary">Browse Petitions</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create</h3>
+                    <p>Create a petition about an issue that matters to you.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Share</h3>
+                    <p>Share your petition with friends, family, and your community.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Sign</h3>
+                    <p>Collect signatures to reach your target and make a difference.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Succeed</h3>
+                    <p>When your petition reaches its goal, it's archived as a success story.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-campaigns">
+            <h2>Featured Campaigns</h2>
+            <div class="campaigns-container" id="featuredCampaigns">
+                <!-- Campaigns will be loaded here from JavaScript -->
+                <div class="loading">Loading featured campaigns...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PetitionPower</h3>
+                <p>Make your voice heard and create change.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Create Campaign</a></li>
+                    <li><a href="active.html">Active Campaigns</a></li>
+                    <li><a href="past.html">Past Campaigns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="help.html">Help/FAQ</a></li>
+                    <li><a href="help.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PetitionPower. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html> 

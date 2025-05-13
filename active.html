@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Petitions - PetitionPower</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/campaigns.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetitionPower</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create Campaign</a></li>
+                <li><a href="active.html" class="active">Active Campaigns</a></li>
+                <li><a href="past.html">Past Campaigns</a></li>
+                <li><a href="help.html">Help/FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="campaigns-section">
+            <div class="container">
+                <h1>Active Petition Campaigns</h1>
+                <p class="section-description">These petitions are still collecting signatures to reach their goals. Sign a petition to show your support!</p>
+                
+                <div class="campaigns-filter">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search petitions...">
+                        <button id="searchButton" class="btn primary">Search</button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sortSelect">Sort by:</label>
+                        <select id="sortSelect" class="form-control">
+                            <option value="newest">Newest</option>
+                            <option value="oldest">Oldest</option>
+                            <option value="most_signatures">Most Signatures</option>
+                            <option value="least_signatures">Least Signatures</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="campaignsContainer" class="campaigns-container">
+                    <!-- Campaigns will be loaded here from JavaScript -->
+                    <div class="loading">Loading campaigns...</div>
+                </div>
+                
+                <div class="pagination">
+                    <button id="loadMoreBtn" class="btn secondary">Load More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PetitionPower</h3>
+                <p>Make your voice heard and create change.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Create Campaign</a></li>
+                    <li><a href="active.html">Active Campaigns</a></li>
+                    <li><a href="past.html">Past Campaigns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="help.html">Help/FAQ</a></li>
+                    <li><a href="help.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PetitionPower. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/campaigns.js"></script>
+</body>
+</html> 

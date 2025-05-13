@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ - PetitionPower</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/help.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetitionPower</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create Campaign</a></li>
+                <li><a href="active.html">Active Campaigns</a></li>
+                <li><a href="past.html">Past Campaigns</a></li>
+                <li><a href="help.html" class="active">Help/FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="help-section">
+            <div class="container">
+                <h1>Help & Frequently Asked Questions</h1>
+                <p class="section-description">Find answers to common questions about using PetitionPower.</p>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I start a petition?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Starting a petition is easy! Simply click on the "Create Campaign" link in the navigation menu, or the "Start a Petition" button on the home page. Fill out the form with your petition title, description, and target number of signatures. Then click "Create Petition" to publish it.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How many signatures should I aim for?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The number of signatures you should aim for depends on the scope and impact of your petition. For local issues, 100-500 signatures might be sufficient. For broader issues or those targeting major organizations, aim for 1,000 or more signatures. Set a realistic target that you believe will demonstrate significant support for your cause.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I sign a petition?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To sign a petition, browse the Active Campaigns page and find a petition you'd like to support. Click on "View Campaign" to see the full details, then click the "Sign This Petition" button. Your signature will be recorded anonymously, and the petition's signature count will increase.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens when a petition reaches its goal?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>When a petition reaches its signature goal, it's automatically moved from the Active Campaigns section to the Past Campaigns section. It's marked as completed and can no longer receive signatures. The petition remains on the platform as a record of successful community action.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I share a petition?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>When viewing a petition, click the "Share" button to open sharing options. You can share the petition directly to social media platforms like Facebook and Twitter, send it via email, or copy the direct link to share it anywhere else. Sharing is a powerful way to help petitions reach their signature goals faster!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I edit my petition after publishing it?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Currently, petitions cannot be edited after they're published. This ensures transparency and prevents changing the petition's purpose after people have signed it. Please review your petition carefully before publishing it.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Are my signatures anonymous?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, signatures are anonymous by default. We track signatures using a unique identifier to prevent duplicate signing, but this information isn't publicly visible. Signatures are displayed as "Anonymous supporter" with the date.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2>Can't find what you're looking for?</h2>
+                <p class="section-description">Send us a message and we'll get back to you as soon as possible.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactEmail">Your Email *</label>
+                        <input type="email" id="contactEmail" class="form-control" placeholder="Your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <input type="text" id="contactSubject" class="form-control" placeholder="What's this about?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </div>
+                </form>
+                
+                <div id="formStatus" class="form-status"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PetitionPower</h3>
+                <p>Make your voice heard and create change.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Create Campaign</a></li>
+                    <li><a href="active.html">Active Campaigns</a></li>
+                    <li><a href="past.html">Past Campaigns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="help.html">Help/FAQ</a></li>
+                    <li><a href="help.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PetitionPower. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/help.js"></script>
+</body>
+</html> 
